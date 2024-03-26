@@ -96,7 +96,7 @@ const CardContainer = styled.div`
     flex-wrap: wrap;
     gap: 20px;
 `;
-const Projects = () => {
+const Projects = ({openModal,setOpenModal}) => {
     const [toggle, setToggle] = useState("all");
   return <Container id="projects">
     <Wrapper>
@@ -136,11 +136,11 @@ const Projects = () => {
         <CardContainer>
             {toggle === "all" && 
             projects.map((project) => 
-            <Projectcard project={project}/>)}
+            <Projectcard project={project} openModal={openModal} setOpenModal={setOpenModal}/>)}
             {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
-                <Projectcard project={project} />
+                <Projectcard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
         </CardContainer>
     </Wrapper>
