@@ -171,7 +171,7 @@ const NavBar = () => {
                 <NavItems>
                     <NavLinK href="#about">About</NavLinK>
                     <NavLinK href="#skills">Skills</NavLinK>
-                    <NavLinK href="#exoerience">Experience</NavLinK>
+                    <NavLinK href="#experience">Experience</NavLinK>
                     <NavLinK href="#projects">Projects</NavLinK>
                     <NavLinK href="#education">Education</NavLinK>
                 </NavItems>
